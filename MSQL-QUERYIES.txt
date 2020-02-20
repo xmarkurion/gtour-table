@@ -1,0 +1,10 @@
+Database
+gtourie_site
+
+DB_USer
+gtourie_site
+EusIouSchaGu
+
+@nn@1502
+
+INSERT INTO `site` (`id`, `cs`, `video`, `scan`, `date`) VALUES (NULL, 'Tullamore', 'https://drive.google.com/file/d/1uUQOSd7qEiJdn3XZ5HZjiCC_YkZNvZnS/view?usp=sharing', 'https://cloud.pix4d.com/bim/site/57894/project/621087/map?shareToken=ceb62478-a748-491a-90a7-8d9a2d3002e9', '2020-02-17');
