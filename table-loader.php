@@ -26,6 +26,7 @@ if ($result->num_rows > 0) {
     <td><a href=\"". $row["video"] ." \">VIDEO</a></td>
     <td><a href=\"". $row["scan"] ." \">SCAN</a></td>
    <!---  <td><a href=\"". $row["360"] ." \">VR</a></td> -->
+   <td>". $row["date"] ."</td>
 </tr>";
     }
 } else {

@@ -41,6 +41,7 @@ session_start();
             $edit_scan = $row["scan"];
             $edit_gps = $row["gps"];
             $edit_360 = $row["360"];
+            $edit_date = $row["date"];
         }
         } else {
             echo "0 results";
@@ -125,6 +126,11 @@ session_start();
             <div class="form-group">
              <label class="my-2"for="exampleInputEmail1">360</label>
             <input type="text" value="<?php echo($edit_360); ?>" class="form-control" name="360Link" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
+            </div>
+
+            <div class="form-group">
+             <label class="my-2"for="exampleInputEmail1">Capture Date</label>
+            <input type="text" value="<?php echo($edit_date); ?>" class="form-control" name="dateLink" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
             </div>
 
 
