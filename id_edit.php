@@ -39,6 +39,8 @@ session_start();
             $edit_cs = $row["cs"];
             $edit_video = $row["video"];
             $edit_scan = $row["scan"];
+            $edit_gps = $row["gps"];
+            $edit_360 = $row["360"];
         }
         } else {
             echo "0 results";
@@ -90,6 +92,8 @@ session_start();
             <h1> Active edit ID: <?php echo($_POST['tableID']); ?>
             </div>
 
+            <!-- ----FORM EDIT START----- -->
+
             <div class="col-12">
             <form action="edit_msql.php" method="post">
 
@@ -109,14 +113,25 @@ session_start();
             </div>
 
             <div class="form-group">
-             <label class="my-2"for="exampleInputEmail1">Site Link</label>
+             <label class="my-2"for="exampleInputEmail1">Site link</label>
             <input type="text" value="<?php echo($edit_scan); ?>" class="form-control" name="siteLink" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
+            </div>
+
+            <div class="form-group">
+             <label class="my-2"for="exampleInputEmail1">GPS</label>
+            <input type="text" value="<?php echo($edit_gps); ?>" class="form-control" name="gpsLink" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
+            </div>
+
+            <div class="form-group">
+             <label class="my-2"for="exampleInputEmail1">360</label>
+            <input type="text" value="<?php echo($edit_360); ?>" class="form-control" name="360Link" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
             </div>
 
 
             <button type="submit" class="btn btn-primary">Apply changes</button>
             </form>
-            </div>  
+            </div> 
+            <!-- ----FORM EDIT END----- --> 
 
             <!-- ------------------ -->
             <div class="col-12">

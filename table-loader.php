@@ -18,12 +18,14 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
        
+        //<td class=\"name\">". $row["cs"] ." </td>
     $htmldata .= "
 <tr class=\"text-white\">
     <th scope=\"row\"> ". $row["id"] ." </th>
-    <td class=\"name\">". $row["cs"] ." </td>
+    <td class=\"name\"><a class=\"siteName\" href=\"". $row["gps"] ."\">". $row["cs"] ."</a> </td>
     <td><a href=\"". $row["video"] ." \">VIDEO</a></td>
     <td><a href=\"". $row["scan"] ." \">SCAN</a></td>
+   <!---  <td><a href=\"". $row["360"] ." \">VR</a></td> -->
 </tr>";
     }
 } else {

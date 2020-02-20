@@ -1,0 +1,19 @@
+a.siteName:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a.siteName:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a.siteName:hover {
+    color: yellow;
+    font-weight: bold;
+  }
+  
+  /* selected link */
+  a.siteName:active {
+    color: red;
+  }
