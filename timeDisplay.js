@@ -5,9 +5,21 @@ const timer = setInterval( () => {
     dateTerminal.innerText = now.toLocaleString();
 },1000);
 
-window.$ = window.jquery = require('./node_modules/jquery');
-window.dt = require('./node_modules/datatables.net')();
-window.$('#table_id').DataTable();
+
+const status_img_replace = document.querySelectorAll('.stat');
+
+status_img_replace.forEach(data =>{
+    if(data.innerText == 0){
+        data.innerHTML = "<img src='media/red.svg' style='width: 29px;'>";
+    }
+
+    if(data.innerText == 1){
+        data.innerHTML = "<img src='media/green.svg' style='width: 29px;'>";
+    }
+});
+
+
+
 
 
 

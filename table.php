@@ -58,6 +58,8 @@ session_start();
         <th scope="col">Construction Site</th>
         <th scope="col">Video Link</th>
         <th scope="col">Site Scan</th>
+        <th scope="col">VR</th>
+        <th scope="col">Status</th>
         <th scope="col">Capture Date</th>
     </tr>
     </thead>

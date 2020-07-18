@@ -21,11 +21,12 @@ if ($result->num_rows > 0) {
         //<td class=\"name\">". $row["cs"] ." </td>
     $htmldata .= "
 <tr class=\"text-white\">
-    <th scope=\"row\"> ". $row["id"] ." </th>
-    <td class=\"name\"><a class=\"siteName\" href=\"". $row["gps"] ."\">". $row["cs"] ."</a> </td>
-    <td><a href=\"". $row["video"] ." \">VIDEO</a></td>
-    <td><a href=\"". $row["scan"] ." \">SCAN</a></td>
-   <!---  <td><a href=\"". $row["360"] ." \">VR</a></td> -->
+   <th scope=\"row\"> ". $row["id"] ." </th>
+   <td class=\"name\"><a class=\"siteName\" href=\"". $row["gps"] ."\">". $row["cs"] ."</a> </td>
+   <td><a href=\"". $row["video"] ." \">VIDEO</a></td>
+   <td><a href=\"". $row["scan"] ." \">SCAN</a></td>
+   <td><a href=\"". $row["360"] ." \">VR</a></td> 
+   <td class=\"stat\"> ".$row["status"]." </td> 
    <td>". $row["date"] ."</td>
 </tr>";
     }
@@ -34,3 +35,6 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+
+
+

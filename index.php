@@ -1,8 +1,8 @@
 <?php
 session_start();
+require_once 'login.php';
 $password_entered_by_user = "";
-$key = "glen2020";
-$adminKey = "1";
+
 
     if(isset($_POST['pos_password']))
     {

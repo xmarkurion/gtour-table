@@ -11,7 +11,7 @@ if(isset($_POST['postID']))
     }   
 
      //$sql = "UPDATE `site` SET `cs` = 'Tullamore', `video` = 'aaaaaa', `scan` = 'ht2e9', `date` = CURRENT_DATE() WHERE `site`.`id` = 1"; 
-    $sql = "UPDATE `site` SET `cs` = '".$_POST['siteName']."', `video` = '".$_POST['videoLink']."', `scan` = '".$_POST['siteLink']."', `gps` = '".$_POST['gpsLink']."', `360` = '".$_POST['360Link']."', `status` = '".$_POST['status']."', `date` = '".$_POST['dateLink']."' WHERE `site`.`id` = ".$_POST['postID']."";
+    $sql = "UPDATE `site` SET `cs` = '".$_POST['siteName']."', `video` = '".$_POST['videoLink']."', `scan` = '".$_POST['siteLink']."', `gps` = '".$_POST['gpsLink']."', `360` = '".$_POST['360Link']."', `date` = '".$_POST['dateLink']."' WHERE `site`.`id` = ".$_POST['postID']."";
     $result = $conn->query($sql);
     $conn->close();
 
