@@ -18,7 +18,12 @@ status_img_replace.forEach(data =>{
     }
 });
 
+const footer_disabler = document.querySelectorAll('footer');
+console.log(footer_disabler);
 
+footer_disabler.forEach(data =>{
+   data.style = 'display: none';
+});
 
 
 

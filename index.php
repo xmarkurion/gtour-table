@@ -66,12 +66,14 @@ $password_entered_by_user = "";
         </div>
     </div>
 
-    <!-- Footer-->
-    <footer class="page-footer font-small text-white pt-4">
-    <div class="footer-copyright text-center py-3">© 2020 Web creator:
-        <a href="https://www.markurion.eu"> Markurion</a>
-    </div>
+
+    <footer class="disable page-footer font-small text-white pt-4">
+        <div class="footer-copyright text-center py-3">© 2020 Web creator:
+            <a href=""> Markurion</a>
+        </div>
     </footer>
+
+    <script src="timeDisplay.js"></script>
 </body>
 
 </html>
